@@ -1,10 +1,5 @@
 # -*- coding: utf-8 -*-
 from selenium import webdriver
-from selenium.webdriver.common.by import By
-from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.support.ui import Select
-from selenium.common.exceptions import NoSuchElementException
-from selenium.common.exceptions import NoAlertPresentException
 
 class Application:
 
@@ -28,8 +23,8 @@ class Application:
         wd.find_element_by_xpath("//input[@value='Login']").click()
 
     def open_groups_page(self):
-            wd = self.wd
-            wd.find_element_by_link_text("groups").click()
+        wd = self.wd
+        wd.find_element_by_link_text("groups").click()
 
     def create_group(self, group):
         wd = self.wd
