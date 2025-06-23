@@ -149,4 +149,4 @@ class ContactHalper:
 
     def return_to_contacts_page(self):
         wd = self.app.wd
-        wd.find_element_by_link_text("home page").click()
+        wd.find_element_by_link_text("home").click()
