@@ -63,6 +63,15 @@ class ContactHalper:
         wd.find_element_by_name("ayear").clear()
         wd.find_element_by_name("ayear").send_keys(contact.ayear)
         wd.find_element_by_xpath("//div[@id='content']/form/input[20]").click()
+        self.return_to_contacts_page()
+
+    def delete_first_contact(self):
+        wd = self.app.wd
+        #select first contact
+        wd.find_element_by_name("selected[]").click()
+        #submit deletion
+        wd.find_element_by_xpath("//input[@value='Delete']").click()
+        self.return_to_contacts_page()
 
     def return_to_contacts_page(self):
         wd = self.app.wd
