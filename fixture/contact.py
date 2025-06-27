@@ -4,6 +4,10 @@ class ContactHalper:
     def __init__(self, app):
         self.app = app
 
+    def open_home_page(self):
+        wd = self.app.wd
+        wd.find_element_by_link_text("home").click()
+
     def change_field_value_contact(self, field_name, text):
         wd = self.app.wd
         if text is not None:
@@ -43,6 +47,7 @@ class ContactHalper:
 
     def create(self, contact):
         wd = self.app.wd
+        self.open_home_page()
         # init contact creation
         wd.find_element_by_link_text("add new").click()
         self.fill_contact_form(contact)
@@ -55,6 +60,7 @@ class ContactHalper:
 
     def delete_first_contact(self):
         wd = self.app.wd
+        self.open_home_page()
         self.select_first_contact()
         #submit deletion
         wd.find_element_by_xpath("//input[@value='Delete']").click()
@@ -62,6 +68,7 @@ class ContactHalper:
 
     def edit_first_contact(self, contact):
         wd = self.app.wd
+        self.open_home_page()
         self.select_first_contact()
         # edit contact form
         wd.find_element_by_xpath("//img[@alt='Edit']").click()
@@ -71,6 +78,7 @@ class ContactHalper:
 
     def modify_first_contact(self, new_contact_date):
         wd = self.app.wd
+        self.open_home_page()
         self.select_first_contact()
         # open modification form
         wd.find_element_by_xpath("//img[@alt='Edit']").click()
