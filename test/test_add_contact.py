@@ -1,12 +1,17 @@
 # -*- coding: utf-8 -*-
 from model.contact import Contact
 
-
 def test_add_contact(app):
-    app.contact.create(Contact(firstname="arty", middlename="rtyu", lastname="otyu", nickname="tyui",
+    old_contacts = app.contact.get_contact_list()
+    contact = Contact(firstname="arty", middlename="rtyu", lastname="otyu", nickname="tyui",
                                company="sdfg", title="asdf", address="dfgh", home="dfgh", mobile="ghjk",
                                work="hjkl", fax="kl;h", email="zxcv", email2="vbnm", email3="vbnm",
                                homepage="fghj", bday="20", bmonth="December", byear="1986", aday="10",
-                               amonth="May", ayear="2002"))
+                               amonth="May", ayear="2002")
+    app.contact.create()
+    new_contacts = app.contact.get_contact_list()
+    assert len(old_contacts) + 1 == len(new_contacts)
+    old_contacts.append(contact)
+    assert sorted(old_contacts, key = Contact.id_or_max) == sorted(new_contacts, key = Contact.id_or_max)
 
 
