@@ -104,9 +104,9 @@ class ContactHalper:
         wd = self.app.wd
         self.open_home_page()
         contacts = []
-        for element in wd.find_elements_by_css_selector("tr.class[name='entry']"):
-            firstn = element.find_element_by_tag_name("td")[2].text
-            lastn = element.find_element_tag_name("td")[1].text
+        for element in wd.find_elements_by_css_selector("tr[name='entry']"):
+            firstn = element.find_elements_by_tag_name("td")[2].text
+            lastn = element.find_elements_by_tag_name("td")[1].text
             id = element.find_element_by_name("selected[]").get_attribute("value")
             contacts.append(Contact(firstname = firstn, lastname = lastn, id = id))
         return contacts

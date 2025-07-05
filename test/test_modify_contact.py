@@ -10,7 +10,7 @@ def test_modify_contact_firstname(app):
                                homepage="test", bday="1", bmonth="May", byear="1900", aday="31",
                                amonth="December", ayear="1900"))
     old_contacts = app.contact.get_contact_list()
-    contact = Contact(firstname="New contact firstname")
+    contact = Contact(firstname="New contact firstname",lastname="New contact lastname")
     contact.id = old_contacts[0].id
     app.contact.modify_first_contact(contact)
     new_contacts = app.contact.get_contact_list()
