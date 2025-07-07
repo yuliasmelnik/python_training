@@ -4,12 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dc72b123-5db7-4120-8dff-2bd55fb5db24" name="Changes" comment="Задание 11 (промежуточное, исправление опечатки)">
+    <list default="true" id="dc72b123-5db7-4120-8dff-2bd55fb5db24" name="Changes" comment="Задание 11">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fixture/contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/contact.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fixture/group.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/group.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/test_add_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_add_contact.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_add_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_add_group.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_del_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_del_contact.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_del_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_del_group.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/test_edit_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_edit_contact.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_edit_grop.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_edit_grop.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/test_modify_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_modify_contact.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_modify_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_modify_group.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,8 +107,8 @@
       <recent name="C:\Users\AMD\PycharmProjects\python_training\fixture" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.pytest in test_modify_group.py">
-    <configuration name="pytest in test_del_contact.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.pytest in test">
+    <configuration name="pytest in test" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="python_training" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -116,11 +122,11 @@
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/test/test_del_contact.py&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest in test_del_group.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest in test_edit_contact.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="python_training" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -134,7 +140,7 @@
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/test/test_del_group.py&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test/test_edit_contact.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
@@ -193,18 +199,18 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python tests.pytest in test_del_group.py" />
+      <item itemvalue="Python tests.pytest in test" />
       <item itemvalue="Python tests.pytest in test_modify_group.py" />
-      <item itemvalue="Python tests.pytest in test_del_contact.py" />
       <item itemvalue="Python tests.pytest in test_modify_contact.py" />
       <item itemvalue="Python tests.pytest in test_edit_grop.py" />
+      <item itemvalue="Python tests.pytest in test_edit_contact.py" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.pytest in test" />
+        <item itemvalue="Python tests.pytest in test_edit_contact.py" />
         <item itemvalue="Python tests.pytest in test_modify_group.py" />
-        <item itemvalue="Python tests.pytest in test_del_group.py" />
         <item itemvalue="Python tests.pytest in test_modify_contact.py" />
-        <item itemvalue="Python tests.pytest in test_del_contact.py" />
         <item itemvalue="Python tests.pytest in test_edit_grop.py" />
       </list>
     </recent_temporary>
@@ -251,7 +257,8 @@
       <workItem from="1751038128792" duration="13473000" />
       <workItem from="1751098403607" duration="10371000" />
       <workItem from="1751651320648" duration="8591000" />
-      <workItem from="1751713004054" duration="24337000" />
+      <workItem from="1751713004054" duration="24479000" />
+      <workItem from="1751891578378" duration="2251000" />
     </task>
     <task id="LOCAL-00001" summary="Улучшено описание репозитория">
       <option name="closed" value="true" />
@@ -605,7 +612,15 @@
       <option name="project" value="LOCAL" />
       <updated>1751745472354</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="Задание 11">
+      <option name="closed" value="true" />
+      <created>1751748757370</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1751748757371</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -624,7 +639,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="MARK_IGNORED_AS_EXCLUDED" value="true" />
-    <MESSAGE value="Задание 5" />
     <MESSAGE value="Тест на удаление группы (до переноса conftest вверх)" />
     <MESSAGE value="Задание 6 (до переноса conftest вверх)" />
     <MESSAGE value="Задание 6" />
@@ -649,21 +663,22 @@
     <MESSAGE value="Сравнение списков групп в тесте на добавление и модификации групп" />
     <MESSAGE value="Задание 11 (промежуточное)" />
     <MESSAGE value="Задание 11 (промежуточное, исправление опечатки)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Задание 11 (промежуточное, исправление опечатки)" />
+    <MESSAGE value="Задание 11" />
+    <option name="LAST_COMMIT_MESSAGE" value="Задание 11" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/python_training$test_add_contact.coverage" NAME="test_add_contact Coverage Results" MODIFIED="1750612815247" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python_training$quadratic.coverage" NAME="quadratic Coverage Results" MODIFIED="1751039406927" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/python_training$pytest_in_test_add_group_py.coverage" NAME="pytest in test_add_group.py Coverage Results" MODIFIED="1751748526791" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/python_training$pytest_in_test_add_group_py.coverage" NAME="pytest in test_add_group.py Coverage Results" MODIFIED="1751893575429" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python_training$test_add_group.coverage" NAME="test_add_group Coverage Results" MODIFIED="1750612805032" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/python_training$pytest_in_test_del_group_py.coverage" NAME="pytest in test_del_group.py Coverage Results" MODIFIED="1751748691877" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
-    <SUITE FILE_PATH="coverage/python_training$pytest_in_test_modify_contact_py.coverage" NAME="pytest in test_modify_contact.py Coverage Results" MODIFIED="1751748626894" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/python_training$pytest_in_test.coverage" NAME="pytest in test Coverage Results" MODIFIED="1751747983601" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/python_training$pytest_in_test_add_contact_py.coverage" NAME="pytest in test_add_contact.py Coverage Results" MODIFIED="1751748433011" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/python_training$pytest_in_test_modify_group_py.coverage" NAME="pytest in test_modify_group.py Coverage Results" MODIFIED="1751748667803" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/python_training$pytest_in_test_edit_contact_py.coverage" NAME="pytest in test_edit_contact.py Coverage Results" MODIFIED="1751748455608" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/python_training$pytest_in_test_del_contact_py.coverage" NAME="pytest in test_del_contact.py Coverage Results" MODIFIED="1751748613051" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/python_training$pytest_in_test_edit_grop_py.coverage" NAME="pytest in test_edit_grop.py Coverage Results" MODIFIED="1751748544065" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/python_training$pytest_in_test_del_group_py.coverage" NAME="pytest in test_del_group.py Coverage Results" MODIFIED="1751893640983" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/python_training$pytest_in_test_modify_contact_py.coverage" NAME="pytest in test_modify_contact.py Coverage Results" MODIFIED="1751893767444" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/python_training$pytest_in_test_add_contact_py.coverage" NAME="pytest in test_add_contact.py Coverage Results" MODIFIED="1751893534059" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/python_training$pytest_in_test.coverage" NAME="pytest in test Coverage Results" MODIFIED="1751893847153" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/python_training$pytest_in_test_modify_group_py.coverage" NAME="pytest in test_modify_group.py Coverage Results" MODIFIED="1751893799878" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/python_training$pytest_in_test_edit_contact_py.coverage" NAME="pytest in test_edit_contact.py Coverage Results" MODIFIED="1751893821300" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/python_training$pytest_in_test_del_contact_py.coverage" NAME="pytest in test_del_contact.py Coverage Results" MODIFIED="1751893603557" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/python_training$pytest_in_test_edit_grop_py.coverage" NAME="pytest in test_edit_grop.py Coverage Results" MODIFIED="1751893720399" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python_training$application.coverage" NAME="application Coverage Results" MODIFIED="1750528007172" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

@@ -55,6 +55,7 @@ class ContactHalper:
         self.fill_contact_form(contact)
         wd.find_element_by_xpath("//div[@id='content']/form/input[20]").click()
         self.return_to_contacts_page()
+        self.contact_cache = None
 
     def select_first_contact(self):
         wd = self.app.wd
@@ -67,6 +68,7 @@ class ContactHalper:
         #submit deletion
         wd.find_element_by_xpath("//input[@value='Delete']").click()
         self.return_to_contacts_page()
+        self.contact_cache = None
 
     def edit_first_contact(self, contact):
         wd = self.app.wd
@@ -77,6 +79,7 @@ class ContactHalper:
         self.fill_contact_form(contact)
         wd.find_element_by_xpath("//div[@id='content']/form/input[21]").click()
         self.return_to_contacts_page()
+        self.contact_cache = None
 
     def modify_first_contact(self, new_contact_date):
         wd = self.app.wd
@@ -89,6 +92,7 @@ class ContactHalper:
         # submit modification
         wd.find_element_by_xpath("//div[@id='content']/form/input[21]").click()
         self.return_to_contacts_page()
+        self.contact_cache = None
 
     def return_to_contacts_page(self):
         wd = self.app.wd
@@ -100,13 +104,16 @@ class ContactHalper:
         self.open_home_page()
         return len(wd.find_elements_by_name("selected[]"))
 
+    contact_cache = None
+
     def get_contact_list(self):
-        wd = self.app.wd
-        self.open_home_page()
-        contacts = []
-        for element in wd.find_elements_by_css_selector("tr[name='entry']"):
-            firstn = element.find_elements_by_tag_name("td")[2].text
-            lastn = element.find_elements_by_tag_name("td")[1].text
-            id = element.find_element_by_name("selected[]").get_attribute("value")
-            contacts.append(Contact(firstname = firstn, lastname = lastn, id = id))
-        return contacts
+        if self.contact_cache is None:
+            wd = self.app.wd
+            self.open_home_page()
+            self.contact_cache = []
+            for element in wd.find_elements_by_css_selector("tr[name='entry']"):
+                firstn = element.find_elements_by_tag_name("td")[2].text
+                lastn = element.find_elements_by_tag_name("td")[1].text
+                id = element.find_element_by_name("selected[]").get_attribute("value")
+                self.contact_cache.append(Contact(firstname = firstn, lastname = lastn, id = id))
+        return list(self.contact_cache)
