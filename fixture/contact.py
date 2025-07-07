@@ -77,21 +77,27 @@ class ContactHalper:
         self.return_to_contacts_page()
         self.contact_cache = None
 
-    def edit_first_contact(self, contact):
+    def edit_first_contact(self):
+        self.edit_contact_by_index(0)
+
+    def edit_contact_by_index(self, index, new_contact_date):
         wd = self.app.wd
         self.open_home_page()
-        self.select_first_contact()
+        self.select_contact_by_index(index)
         # edit contact form
         wd.find_element_by_xpath("//img[@alt='Edit']").click()
-        self.fill_contact_form(contact)
+        self.fill_contact_form(new_contact_date)
         wd.find_element_by_xpath("//div[@id='content']/form/input[21]").click()
         self.return_to_contacts_page()
         self.contact_cache = None
 
-    def modify_first_contact(self, new_contact_date):
+    def modify_first_contact(self):
+        self.modify_contact_by_index(0)
+
+    def modify_contact_by_index(self, index, new_contact_date):
         wd = self.app.wd
         self.open_home_page()
-        self.select_first_contact()
+        self.select_contact_by_index(index)
         # open modification form
         wd.find_element_by_xpath("//img[@alt='Edit']").click()
         # fill contact form

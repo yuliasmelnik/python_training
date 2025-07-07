@@ -54,7 +54,7 @@ class GroupHelper:
         self.return_to_groups_page()
         self.group_cache = None
 
-    def edit_first_group(self, group):
+    def edit_first_group(self):
         self.edit_group_by_index(0)
 
     def edit_group_by_index(self, index, new_group_date):
