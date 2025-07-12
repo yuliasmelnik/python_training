@@ -167,8 +167,5 @@ class ContactHalper:
         wd = self.app.wd
         self.open_contact_to_view_by_index(index)
         text = wd.find_element_by_id("content").text
-        homephone = re.search("H: (.*)", text).group(1)
-        workphone = re.search("W: (.*)", text).group(1)
-        mobilephone = re.search("M: (.*)", text).group(1)
-        return Contact(homephone=homephone, workphone=workphone,
-                       mobilephone=mobilephone)
+        all_phones = re.search("\n{2}((.*\n){,4})\n{1}", text).group(1)
+        return Contact(all_phones_from_view_page=all_phones)
