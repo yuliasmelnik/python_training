@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dc72b123-5db7-4120-8dff-2bd55fb5db24" name="Changes" comment="Задание 13 (промежуточное)">
+    <list default="true" id="dc72b123-5db7-4120-8dff-2bd55fb5db24" name="Changes" comment="Задание 13">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixture/contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/contact.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fixture/session.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/session.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,41 +55,41 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Python tests.pytest in test.executor": "Run",
-    "Python tests.pytest in test_add_contact.py.executor": "Run",
-    "Python tests.pytest in test_add_group.py.executor": "Run",
-    "Python tests.pytest in test_del_contact.py.executor": "Run",
-    "Python tests.pytest in test_del_group.py.executor": "Run",
-    "Python tests.pytest in test_edit_contact.py.executor": "Run",
-    "Python tests.pytest in test_edit_grop.py.executor": "Run",
-    "Python tests.pytest in test_modify_contact.py.executor": "Run",
-    "Python tests.pytest in test_modify_group.py.executor": "Run",
-    "Python.application.executor": "Run",
-    "Python.quadratic.executor": "Run",
-    "Python.test_add_contact.executor": "Run",
-    "Python.test_add_group.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "ssh.settings",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python tests.pytest in test.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest in test_add_contact.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest in test_add_group.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest in test_del_contact.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest in test_del_group.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest in test_edit_contact.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest in test_edit_grop.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest in test_modify_contact.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest in test_modify_group.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python.application.executor&quot;: &quot;Run&quot;,
+    &quot;Python.quadratic.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test_add_contact.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test_add_group.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;ssh.settings&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "GitStage.ChangesTree.GroupingKeys": [
-      "directory",
-      "module",
-      "repository"
+  &quot;keyToStringList&quot;: {
+    &quot;GitStage.ChangesTree.GroupingKeys&quot;: [
+      &quot;directory&quot;,
+      &quot;module&quot;,
+      &quot;repository&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\AMD\PycharmProjects\python_training" />
@@ -192,24 +192,23 @@
     <list>
       <item itemvalue="Python tests.pytest in test" />
       <item itemvalue="Python tests.pytest in test_add_contact.py" />
-      <item itemvalue="Python tests.pytest in test_edit_contact.py" />
       <item itemvalue="Python tests.pytest in test_del_contact.py" />
+      <item itemvalue="Python tests.pytest in test_edit_contact.py" />
       <item itemvalue="Python tests.pytest in test_modify_contact.py" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python tests.pytest in test" />
-        <item itemvalue="Python tests.pytest in test_edit_contact.py" />
         <item itemvalue="Python tests.pytest in test_modify_contact.py" />
-        <item itemvalue="Python tests.pytest in test_add_contact.py" />
+        <item itemvalue="Python tests.pytest in test_edit_contact.py" />
         <item itemvalue="Python tests.pytest in test_del_contact.py" />
+        <item itemvalue="Python tests.pytest in test_add_contact.py" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-6a121458b545-JavaScript-PY-251.25410.159" />
         <option value="bundled-python-sdk-e0ed3721d81e-36ea0e71a18c-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-251.25410.159" />
       </set>
     </attachedChunks>
@@ -252,15 +251,9 @@
       <workItem from="1751891578378" duration="8780000" />
       <workItem from="1751901737140" duration="6636000" />
       <workItem from="1751909768338" duration="13000" />
-      <workItem from="1751988684502" duration="8907000" />
-    </task>
-    <task id="LOCAL-00002" summary=" Создан проект в PyCharm">
-      <option name="closed" value="true" />
-      <created>1749837722642</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1749837722642</updated>
+      <workItem from="1751988684502" duration="9105000" />
+      <workItem from="1752041609691" duration="35000" />
+      <workItem from="1752317294140" duration="429000" />
     </task>
     <task id="LOCAL-00003" summary="Промежуточный результат теста на добавление группы">
       <option name="closed" value="true" />
@@ -646,7 +639,15 @@
       <option name="project" value="LOCAL" />
       <updated>1751905507966</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="Задание 13">
+      <option name="closed" value="true" />
+      <created>1752007694889</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1752007694891</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -665,7 +666,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="MARK_IGNORED_AS_EXCLUDED" value="true" />
-    <MESSAGE value="Добавление теста для редактирования первого контакта" />
     <MESSAGE value="Отладка запуска всех тестов подряд" />
     <MESSAGE value="Выделение fill_or_edit_contact_form" />
     <MESSAGE value="Задание 7" />
@@ -690,7 +690,8 @@
     <MESSAGE value="Модификация случайной группы" />
     <MESSAGE value="Удаление случайного контакта" />
     <MESSAGE value="Задание 13 (промежуточное)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Задание 13 (промежуточное)" />
+    <MESSAGE value="Задание 13" />
+    <option name="LAST_COMMIT_MESSAGE" value="Задание 13" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/python_training$test_add_contact.coverage" NAME="test_add_contact Coverage Results" MODIFIED="1750612815247" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -700,7 +701,7 @@
     <SUITE FILE_PATH="coverage/python_training$pytest_in_test_del_group_py.coverage" NAME="pytest in test_del_group.py Coverage Results" MODIFIED="1751896266328" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python_training$pytest_in_test_modify_contact_py.coverage" NAME="pytest in test_modify_contact.py Coverage Results" MODIFIED="1752007461396" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python_training$pytest_in_test_add_contact_py.coverage" NAME="pytest in test_add_contact.py Coverage Results" MODIFIED="1752007385489" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/python_training$pytest_in_test.coverage" NAME="pytest in test Coverage Results" MODIFIED="1752007550825" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/python_training$pytest_in_test.coverage" NAME="pytest in test Coverage Results" MODIFIED="1752007567229" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python_training$pytest_in_test_modify_group_py.coverage" NAME="pytest in test_modify_group.py Coverage Results" MODIFIED="1752002882919" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python_training$pytest_in_test_edit_contact_py.coverage" NAME="pytest in test_edit_contact.py Coverage Results" MODIFIED="1752007508066" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python_training$pytest_in_test_del_contact_py.coverage" NAME="pytest in test_del_contact.py Coverage Results" MODIFIED="1752006980550" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
