@@ -14,9 +14,6 @@ def test_phones_on_contact_view_page(app):
 def clear(s):
     return re.sub("[() -]", "", s)
 
-def clear_strip(s):
-    return s.strip()
-
 def merge_phones_like_on_home_page(contact):
     return "\n".join(filter(lambda x: x != "",
                             map(lambda x: clear(x),
