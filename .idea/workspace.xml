@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dc72b123-5db7-4120-8dff-2bd55fb5db24" name="Changes" comment="Обратная проверка телефонов на главной странице">
+    <list default="true" id="dc72b123-5db7-4120-8dff-2bd55fb5db24" name="Changes" comment="Обратная проверка телефонов на странице просмотра (предварительный)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fixture/contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/contact.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model/contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/contact.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_phones.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_phones.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_add_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_add_contact.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_edit_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_edit_contact.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_modify_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_modify_contact.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,45 +59,45 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Python tests.pytest for test_phones.test_phones_on_contact_view_page.executor": "Run",
-    "Python tests.pytest for test_phones.test_phones_on_home_page.executor": "Run",
-    "Python tests.pytest in test.executor": "Run",
-    "Python tests.pytest in test_add_contact.py.executor": "Run",
-    "Python tests.pytest in test_add_group.py.executor": "Run",
-    "Python tests.pytest in test_del_contact.py.executor": "Run",
-    "Python tests.pytest in test_del_group.py.executor": "Run",
-    "Python tests.pytest in test_edit_contact.py.executor": "Run",
-    "Python tests.pytest in test_edit_grop.py.executor": "Run",
-    "Python tests.pytest in test_modify_contact.py.executor": "Run",
-    "Python tests.pytest in test_modify_group.py.executor": "Run",
-    "Python tests.pytest in test_phones.py.executor": "Run",
-    "Python.application.executor": "Run",
-    "Python.contact.executor": "Run",
-    "Python.quadratic.executor": "Run",
-    "Python.test_add_contact.executor": "Run",
-    "Python.test_add_group.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "ssh.settings",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python tests.pytest for test_phones.test_phones_on_contact_view_page.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for test_phones.test_phones_on_home_page.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest in test.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest in test_add_contact.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest in test_add_group.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest in test_del_contact.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest in test_del_group.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest in test_edit_contact.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest in test_edit_grop.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest in test_modify_contact.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest in test_modify_group.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest in test_phones.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python.application.executor&quot;: &quot;Run&quot;,
+    &quot;Python.contact.executor&quot;: &quot;Run&quot;,
+    &quot;Python.quadratic.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test_add_contact.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test_add_group.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;ssh.settings&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "GitStage.ChangesTree.GroupingKeys": [
-      "directory",
-      "module",
-      "repository"
+  &quot;keyToStringList&quot;: {
+    &quot;GitStage.ChangesTree.GroupingKeys&quot;: [
+      &quot;directory&quot;,
+      &quot;module&quot;,
+      &quot;repository&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\AMD\PycharmProjects\python_training" />
@@ -104,7 +106,7 @@
       <recent name="C:\Users\AMD\PycharmProjects\python_training\fixture" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.pytest for test_phones.test_phones_on_contact_view_page">
+  <component name="RunManager" selected="Python tests.pytest in test">
     <configuration name="contact" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python_training" />
       <option name="ENV_FILES" value="" />
@@ -179,37 +181,37 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest in test_modify_contact.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest in test_phones.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="python_training" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/test/test_modify_contact.py&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test/test_phones.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <list>
       <item itemvalue="Python.contact" />
+      <item itemvalue="Python tests.pytest in test_phones.py" />
       <item itemvalue="Python tests.pytest for test_phones.test_phones_on_contact_view_page" />
       <item itemvalue="Python tests.pytest for test_phones.test_phones_on_home_page" />
-      <item itemvalue="Python tests.pytest in test_modify_contact.py" />
       <item itemvalue="Python tests.pytest in test" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.pytest for test_phones.test_phones_on_contact_view_page" />
-        <item itemvalue="Python.contact" />
         <item itemvalue="Python tests.pytest in test" />
+        <item itemvalue="Python tests.pytest for test_phones.test_phones_on_contact_view_page" />
+        <item itemvalue="Python tests.pytest in test_phones.py" />
+        <item itemvalue="Python.contact" />
         <item itemvalue="Python tests.pytest for test_phones.test_phones_on_home_page" />
-        <item itemvalue="Python tests.pytest in test_modify_contact.py" />
       </list>
     </recent_temporary>
   </component>
@@ -261,14 +263,6 @@
       <workItem from="1751988684502" duration="9105000" />
       <workItem from="1752041609691" duration="35000" />
       <workItem from="1752317294140" duration="429000" />
-    </task>
-    <task id="LOCAL-00007" summary="Группировка параметров">
-      <option name="closed" value="true" />
-      <created>1749904624530</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1749904624530</updated>
     </task>
     <task id="LOCAL-00008" summary="Промежуточный результат">
       <option name="closed" value="true" />
@@ -654,7 +648,15 @@
       <option name="project" value="LOCAL" />
       <updated>1752345413763</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="Обратная проверка телефонов на странице просмотра (предварительный)">
+      <option name="closed" value="true" />
+      <created>1752357566383</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1752357566383</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -673,7 +675,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="MARK_IGNORED_AS_EXCLUDED" value="true" />
-    <MESSAGE value="Создан тест на модификацию группы (изменение значения отдельных полей)" />
     <MESSAGE value="Валидация фикстуры перед каждым тестом" />
     <MESSAGE value="Проверка текущего состояния сессии" />
     <MESSAGE value="Задание 8 (промежуточное, до отладки запуска всех тестов подряд)" />
@@ -698,7 +699,8 @@
     <MESSAGE value="Улучшение функции чтения информации о пользователе" />
     <MESSAGE value="тесты для проверки телефонов" />
     <MESSAGE value="Обратная проверка телефонов на главной странице" />
-    <option name="LAST_COMMIT_MESSAGE" value="Обратная проверка телефонов на главной странице" />
+    <MESSAGE value="Обратная проверка телефонов на странице просмотра (предварительный)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Обратная проверка телефонов на странице просмотра (предварительный)" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/python_training$test_add_contact.coverage" NAME="test_add_contact Coverage Results" MODIFIED="1750612815247" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

@@ -36,7 +36,6 @@ class ContactHalper:
         self.change_field_value_contact("home", contact.homephone)
         self.change_field_value_contact("mobile", contact.mobilephone)
         self.change_field_value_contact("work", contact.workphone)
-        self.change_field_value_contact("fax", contact.fax)
         self.change_field_value_contact("email", contact.email)
         self.change_field_value_contact("email2", contact.email2)
         self.change_field_value_contact("email3", contact.email3)
