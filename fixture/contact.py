@@ -40,12 +40,12 @@ class ContactHalper:
         self.change_field_value_contact("email2", contact.email2)
         self.change_field_value_contact("email3", contact.email3)
         self.change_field_value_contact("homepage", contact.homepage)
-        self.change_field_value_contact_for_select("bday", contact.bday)
-        self.change_field_value_contact_for_select("bmonth", contact.bmonth)
-        self.change_field_value_contact("byear", contact.byear)
-        self.change_field_value_contact_for_select("aday", contact.aday)
-        self.change_field_value_contact_for_select("amonth", contact.amonth)
-        self.change_field_value_contact("ayear", contact.ayear)
+        #self.change_field_value_contact_for_select("bday", contact.bday)
+        #self.change_field_value_contact_for_select("bmonth", contact.bmonth)
+        #self.change_field_value_contact("byear", contact.byear)
+        #self.change_field_value_contact_for_select("aday", contact.aday)
+        #self.change_field_value_contact_for_select("amonth", contact.amonth)
+        #self.change_field_value_contact("ayear", contact.ayear)
 
     def create(self, contact):
         wd = self.app.wd

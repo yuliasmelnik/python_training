@@ -15,8 +15,7 @@ def random_string_without_space(prefix, maxlen):
 testdata = [Contact(firstname="", middlename="", lastname="", nickname="",
                       company="", title="", address="", homephone="", mobilephone="",
                       workphone="", email="", email2="", email3="",
-                      homepage="", bday="", bmonth="", byear="", aday="",
-                      amonth="", ayear="")] + [
+                      homepage="")] + [
     Contact(firstname=random_string_without_space("firstname", 10), middlename=random_string_without_space("middlename", 10),
             lastname=random_string_without_space("lastname", 10), nickname=random_string("nickname", 10),
             company=random_string("company", 10), title=random_string("title", 10),
