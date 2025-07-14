@@ -167,4 +167,4 @@ class ContactHalper:
         self.open_contact_to_view_by_index(index)
         text = wd.find_element_by_id("content").text
         all_phones = re.search("\n{2}((.*\n){,4})\n{1}", text).group(1)
-        return Contact(all_phones_from_view_page=all_phones)
+        return Contact(all_phones_from_view_page=all_phones.strip())
