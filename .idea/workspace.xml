@@ -7,6 +7,7 @@
     <list default="true" id="dc72b123-5db7-4120-8dff-2bd55fb5db24" name="Changes" comment="Задание 15">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fixture/application.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/application.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,7 +169,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;--password\u003dsecret&quot;" />
       <option name="_new_target" value="&quot;$PROJECT_DIR$/test/test_del_group.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
@@ -255,14 +256,6 @@
       <workItem from="1751988684502" duration="9105000" />
       <workItem from="1752041609691" duration="35000" />
       <workItem from="1752317294140" duration="429000" />
-    </task>
-    <task id="LOCAL-00019" summary="Задание 5">
-      <option name="closed" value="true" />
-      <created>1750622677849</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1750622677849</updated>
     </task>
     <task id="LOCAL-00020" summary="Тест на удаление группы (до переноса conftest вверх)">
       <option name="closed" value="true" />
@@ -648,7 +641,15 @@
       <option name="project" value="LOCAL" />
       <updated>1752607506064</updated>
     </task>
-    <option name="localTasksCounter" value="68" />
+    <task id="LOCAL-00068" summary="Задание 15">
+      <option name="closed" value="true" />
+      <created>1752608786935</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1752608786935</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
