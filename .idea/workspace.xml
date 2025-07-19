@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dc72b123-5db7-4120-8dff-2bd55fb5db24" name="Changes" comment="Задание 16 (+пароль ввынесен в параметры)">
+    <list default="true" id="dc72b123-5db7-4120-8dff-2bd55fb5db24" name="Changes" comment="Задание 16 (для создания групп доавила strip при генерации случайной строки, иначе при многократном запуске тест падает)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -254,14 +254,6 @@
       <workItem from="1751988684502" duration="9105000" />
       <workItem from="1752041609691" duration="35000" />
       <workItem from="1752317294140" duration="429000" />
-    </task>
-    <task id="LOCAL-00021" summary="Задание 6 (до переноса conftest вверх)">
-      <option name="closed" value="true" />
-      <created>1750624557945</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1750624557945</updated>
     </task>
     <task id="LOCAL-00022" summary="Задание 6">
       <option name="closed" value="true" />
@@ -647,7 +639,15 @@
       <option name="project" value="LOCAL" />
       <updated>1752609761951</updated>
     </task>
-    <option name="localTasksCounter" value="70" />
+    <task id="LOCAL-00070" summary="Задание 16 (для создания групп доавила strip при генерации случайной строки, иначе при многократном запуске тест падает)">
+      <option name="closed" value="true" />
+      <created>1752610983500</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1752610983501</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -666,7 +666,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="MARK_IGNORED_AS_EXCLUDED" value="true" />
-    <MESSAGE value="Сравнение списков групп в тесте на удаление группы" />
     <MESSAGE value="Сравнение списков групп в тесте на добавление и модификации групп" />
     <MESSAGE value="Задание 11 (промежуточное)" />
     <MESSAGE value="Задание 11 (промежуточное, исправление опечатки)" />
@@ -691,7 +690,8 @@
     <MESSAGE value="Задание №14 (доработан тест test_check_contacts в части проверки email)" />
     <MESSAGE value="Задание 15" />
     <MESSAGE value="Задание 16 (+пароль ввынесен в параметры)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Задание 16 (+пароль ввынесен в параметры)" />
+    <MESSAGE value="Задание 16 (для создания групп доавила strip при генерации случайной строки, иначе при многократном запуске тест падает)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Задание 16 (для создания групп доавила strip при генерации случайной строки, иначе при многократном запуске тест падает)" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/python_training$test_add_contact.coverage" NAME="test_add_contact Coverage Results" MODIFIED="1750612815247" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
