@@ -105,6 +105,17 @@ class ContactHalper:
         self.return_to_contacts_page()
         self.contact_cache = None
 
+    def edit_contact_by_id(self, id, new_contact_date):
+        wd = self.app.wd
+        self.open_home_page()
+        self.select_contact_by_id(id)
+        # edit contact form
+        wd.find_element_by_xpath('//a[@href="edit.php?id=%s"]' %(id)).click()
+        self.fill_contact_form(new_contact_date)
+        wd.find_element_by_xpath("//div[@id='content']/form/input[21]").click()
+        self.return_to_contacts_page()
+        self.contact_cache = None
+
     def modify_first_contact(self):
         self.modify_contact_by_index(0)
 
@@ -115,6 +126,19 @@ class ContactHalper:
         # open modification form
         wd.find_elements_by_xpath("//table[@id='maintable']/tbody/tr['str(index + 2)']/td[8]/a/img")[
             index].click()
+        # fill contact form
+        self.fill_contact_form(new_contact_date)
+        # submit modification
+        wd.find_element_by_xpath("//div[@id='content']/form/input[21]").click()
+        self.return_to_contacts_page()
+        self.contact_cache = None
+
+    def modify_contact_by_id(self, id, new_contact_date):
+        wd = self.app.wd
+        self.open_home_page()
+        self.select_contact_by_id(id)
+        # open modification form
+        wd.find_element_by_xpath('//a[@href="edit.php?id=%s"]' %(id)).click()
         # fill contact form
         self.fill_contact_form(new_contact_date)
         # submit modification
