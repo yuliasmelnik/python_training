@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dc72b123-5db7-4120-8dff-2bd55fb5db24" name="Changes" comment="Уставновка соединения с БД">
-      <change beforePath="$PROJECT_DIR$/check_db_connection.py" beforeDir="false" afterPath="$PROJECT_DIR$/check_db_connection.py" afterDir="false" />
+    <list default="true" id="dc72b123-5db7-4120-8dff-2bd55fb5db24" name="Changes" comment="Извлечение данных из БД">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target.json" beforeDir="false" afterPath="$PROJECT_DIR$/target.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -266,22 +268,6 @@
       <workItem from="1751988684502" duration="9105000" />
       <workItem from="1752041609691" duration="35000" />
       <workItem from="1752317294140" duration="429000" />
-    </task>
-    <task id="LOCAL-00032" summary="Проверка текущего состояния сессии">
-      <option name="closed" value="true" />
-      <created>1751054204111</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1751054204111</updated>
-    </task>
-    <task id="LOCAL-00033" summary="Задание 8 (промежуточное, до отладки запуска всех тестов подряд)">
-      <option name="closed" value="true" />
-      <created>1751058564140</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1751058564140</updated>
     </task>
     <task id="LOCAL-00034" summary="Задание 8">
       <option name="closed" value="true" />
@@ -659,7 +645,23 @@
       <option name="project" value="LOCAL" />
       <updated>1753425602733</updated>
     </task>
-    <option name="localTasksCounter" value="81" />
+    <task id="LOCAL-00081" summary="Извлечение данных из БД">
+      <option name="closed" value="true" />
+      <created>1753425920334</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1753425920335</updated>
+    </task>
+    <task id="LOCAL-00082" summary="Извлечение данных из БД">
+      <option name="closed" value="true" />
+      <created>1753425975509</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1753425975509</updated>
+    </task>
+    <option name="localTasksCounter" value="83" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -678,7 +680,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="MARK_IGNORED_AS_EXCLUDED" value="true" />
-    <MESSAGE value="Улучшение функции чтения информации о пользователе" />
     <MESSAGE value="тесты для проверки телефонов" />
     <MESSAGE value="Обратная проверка телефонов на главной странице" />
     <MESSAGE value="Обратная проверка телефонов на странице просмотра (предварительный)" />
@@ -703,7 +704,8 @@
     <MESSAGE value="Генерация тестовых данных в формате JSON для контактов" />
     <MESSAGE value="Задание 18" />
     <MESSAGE value="Уставновка соединения с БД" />
-    <option name="LAST_COMMIT_MESSAGE" value="Уставновка соединения с БД" />
+    <MESSAGE value="Извлечение данных из БД" />
+    <option name="LAST_COMMIT_MESSAGE" value="Извлечение данных из БД" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/python_training$test_add_contact.coverage" NAME="test_add_contact Coverage Results" MODIFIED="1750612815247" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
