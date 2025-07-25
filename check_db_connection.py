@@ -1,4 +1,4 @@
-import pymysql
+import pymysql.cursors
 
 connection = pymysql.connect(host="127.0.0.1", database="addressbook", user="root", password="")
 
