@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dc72b123-5db7-4120-8dff-2bd55fb5db24" name="Changes" comment="Ограничения или условия отбора загружаемых данных в тесте по удалению контакта">
+    <list default="true" id="dc72b123-5db7-4120-8dff-2bd55fb5db24" name="Changes" comment="Ошибка tuple index out of range">
+      <change beforePath="$PROJECT_DIR$/.idea/python_training.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/python_training.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/check_db_connection.py" beforeDir="false" afterPath="$PROJECT_DIR$/check_db_connection.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -262,14 +262,6 @@
       <workItem from="1751988684502" duration="9105000" />
       <workItem from="1752041609691" duration="35000" />
       <workItem from="1752317294140" duration="429000" />
-    </task>
-    <task id="LOCAL-00040" summary="Список групп">
-      <option name="closed" value="true" />
-      <created>1751660802086</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1751660802087</updated>
     </task>
     <task id="LOCAL-00041" summary="Сравнение списков групп в тесте на удаление группы">
       <option name="closed" value="true" />
@@ -655,7 +647,15 @@
       <option name="project" value="LOCAL" />
       <updated>1753434100196</updated>
     </task>
-    <option name="localTasksCounter" value="89" />
+    <task id="LOCAL-00089" summary="Ошибка tuple index out of range">
+      <option name="closed" value="true" />
+      <created>1753439244726</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1753439244726</updated>
+    </task>
+    <option name="localTasksCounter" value="90" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -674,7 +674,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="MARK_IGNORED_AS_EXCLUDED" value="true" />
-    <MESSAGE value="Задание 14" />
     <MESSAGE value="Случайность для создания групп" />
     <MESSAGE value="Случайность для создания контактов" />
     <MESSAGE value="Передача параметров в тесты (,браузер)" />
@@ -699,7 +698,8 @@
     <MESSAGE value="Доработка теста по удалению групп" />
     <MESSAGE value="Отключаемые проверки пользовательского интерфейса в тесте по удалению групп" />
     <MESSAGE value="Ограничения или условия отбора загружаемых данных в тесте по удалению контакта" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ограничения или условия отбора загружаемых данных в тесте по удалению контакта" />
+    <MESSAGE value="Ошибка tuple index out of range" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ошибка tuple index out of range" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/python_training$test_add_contact.coverage" NAME="test_add_contact Coverage Results" MODIFIED="1750612815247" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
