@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dc72b123-5db7-4120-8dff-2bd55fb5db24" name="Changes" comment="Задание №22">
+    <list default="true" id="dc72b123-5db7-4120-8dff-2bd55fb5db24" name="Changes" comment="Задание №22 (добавление контакта в группу - рефакторинг проверок)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fixture/db.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/db.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fixture/orm.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/orm.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_add_contact_in_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_add_contact_in_group.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/test_delete_contact_from_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_delete_contact_from_group.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -111,7 +111,7 @@
       <recent name="C:\Users\AMD\PycharmProjects\python_training\fixture" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.pytest in test_add_contact_in_group.py">
+  <component name="RunManager" selected="Python tests.pytest in test_delete_contact_from_group.py">
     <configuration name="check_db_connection" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python_training" />
       <option name="ENV_FILES" value="" />
@@ -213,10 +213,10 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.pytest in test_delete_contact_from_group.py" />
         <item itemvalue="Python tests.pytest in test_add_contact_in_group.py" />
         <item itemvalue="Python tests.pytest in test_add_group.py" />
         <item itemvalue="Python tests.pytest in test_add_contact.py" />
-        <item itemvalue="Python tests.pytest in test_delete_contact_from_group.py" />
         <item itemvalue="Python.check_db_connection" />
       </list>
     </recent_temporary>
@@ -269,14 +269,6 @@
       <workItem from="1751988684502" duration="9105000" />
       <workItem from="1752041609691" duration="35000" />
       <workItem from="1752317294140" duration="429000" />
-    </task>
-    <task id="LOCAL-00056" summary="Обратная проверка телефонов на странице просмотра (предварительный)">
-      <option name="closed" value="true" />
-      <created>1752357566383</created>
-      <option name="number" value="00056" />
-      <option name="presentableId" value="LOCAL-00056" />
-      <option name="project" value="LOCAL" />
-      <updated>1752357566383</updated>
     </task>
     <task id="LOCAL-00057" summary="Убрала запонения факса (для теста по проверки телефонов)">
       <option name="closed" value="true" />
@@ -662,7 +654,15 @@
       <option name="project" value="LOCAL" />
       <updated>1753643454819</updated>
     </task>
-    <option name="localTasksCounter" value="105" />
+    <task id="LOCAL-00105" summary="Задание №22 (добавление контакта в группу - рефакторинг проверок)">
+      <option name="closed" value="true" />
+      <created>1753647376758</created>
+      <option name="number" value="00105" />
+      <option name="presentableId" value="LOCAL-00105" />
+      <option name="project" value="LOCAL" />
+      <updated>1753647376759</updated>
+    </task>
+    <option name="localTasksCounter" value="106" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -681,7 +681,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="MARK_IGNORED_AS_EXCLUDED" value="true" />
-    <MESSAGE value="динамическая генерация тестов" />
     <MESSAGE value="Загрузка тестовых данных из файлов в формате JSON" />
     <MESSAGE value="Генерация тестовых данных в формате JSON для контактов" />
     <MESSAGE value="Задание 18" />
@@ -706,7 +705,8 @@
     <MESSAGE value="Добавление контакта в группу" />
     <MESSAGE value="Задание №22: Добавление контакта в группу" />
     <MESSAGE value="Задание №22" />
-    <option name="LAST_COMMIT_MESSAGE" value="Задание №22" />
+    <MESSAGE value="Задание №22 (добавление контакта в группу - рефакторинг проверок)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Задание №22 (добавление контакта в группу - рефакторинг проверок)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -750,6 +750,111 @@
           <url>file://$PROJECT_DIR$/test/test_delete_contact_from_group.py</url>
           <line>20</line>
           <option name="timeStamp" value="124" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/fixture/db.py</url>
+          <line>40</line>
+          <option name="timeStamp" value="127" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/fixture/db.py</url>
+          <line>41</line>
+          <option name="timeStamp" value="128" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/fixture/db.py</url>
+          <line>42</line>
+          <option name="timeStamp" value="129" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/fixture/db.py</url>
+          <line>43</line>
+          <option name="timeStamp" value="130" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/fixture/db.py</url>
+          <line>44</line>
+          <option name="timeStamp" value="131" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/fixture/db.py</url>
+          <line>45</line>
+          <option name="timeStamp" value="132" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/fixture/db.py</url>
+          <line>46</line>
+          <option name="timeStamp" value="133" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/fixture/db.py</url>
+          <line>47</line>
+          <option name="timeStamp" value="134" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/test/test_delete_contact_from_group.py</url>
+          <line>21</line>
+          <option name="timeStamp" value="135" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/fixture/orm.py</url>
+          <line>62</line>
+          <option name="timeStamp" value="136" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/fixture/orm.py</url>
+          <line>63</line>
+          <option name="timeStamp" value="137" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/fixture/orm.py</url>
+          <line>64</line>
+          <option name="timeStamp" value="138" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/test/test_delete_contact_from_group.py</url>
+          <line>24</line>
+          <option name="timeStamp" value="140" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/test/test_delete_contact_from_group.py</url>
+          <line>25</line>
+          <option name="timeStamp" value="141" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/test/test_delete_contact_from_group.py</url>
+          <line>26</line>
+          <option name="timeStamp" value="142" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/test/test_delete_contact_from_group.py</url>
+          <line>27</line>
+          <option name="timeStamp" value="151" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/test/test_delete_contact_from_group.py</url>
+          <line>28</line>
+          <option name="timeStamp" value="152" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/fixture/orm.py</url>
+          <line>57</line>
+          <option name="timeStamp" value="154" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/fixture/orm.py</url>
+          <line>58</line>
+          <option name="timeStamp" value="155" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/fixture/orm.py</url>
+          <line>59</line>
+          <option name="timeStamp" value="156" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/test/test_delete_contact_from_group.py</url>
+          <line>29</line>
+          <option name="timeStamp" value="157" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
