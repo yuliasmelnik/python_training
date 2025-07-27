@@ -223,3 +223,14 @@ class ContactHalper:
         self.return_to_contacts_page()
         self.contact_cache = None
         return Contact(id=contact_id)
+
+    def delete_contact_from_group (self, contact_id, group_id):
+        wd = self.app.wd
+        self.open_home_page()
+        wd.find_element_by_name("group").click()
+        wd.find_element_by_xpath("//select[@name='group']/option[@value='%s']" % group_id).click()
+        self.select_contact_by_id(contact_id)
+        wd.find_element_by_name("remove").click()
+        self.return_to_contacts_page()
+        self.contact_cache = None
+        return Contact(id=contact_id)
