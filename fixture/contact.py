@@ -1,7 +1,5 @@
 from selenium.webdriver.support.ui import Select
 from model.contact import Contact
-from model.group import Group
-from model.contact_in_group import Contact_in_Group
 import re
 
 class ContactHalper:
@@ -224,4 +222,4 @@ class ContactHalper:
         wd.find_element_by_name("add").click()
         self.return_to_contacts_page()
         self.contact_cache = None
-        return Contact_in_Group(contact_id=contact_id,group_id=group_id)
+        return Contact(id=contact_id)

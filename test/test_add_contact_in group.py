@@ -24,4 +24,4 @@ def test_add_contact_in_some_group(app, db):
     finally:
         index = contacts_in_group.index(contact)
         contact_in_group = contacts_in_group[index]
-        assert contact_in_some_group.contact_id == contact_in_group.id
+        assert contact_in_some_group.id == contact_in_group.id

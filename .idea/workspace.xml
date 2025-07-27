@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dc72b123-5db7-4120-8dff-2bd55fb5db24" name="Changes" comment="Задание №20 (доработанное)">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="dc72b123-5db7-4120-8dff-2bd55fb5db24" name="Changes" comment="Добавление контакта в группу">
       <change beforePath="$PROJECT_DIR$/fixture/contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/contact.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/test_add_contact_in group.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_add_contact_in group.py" afterDir="false" />
     </list>
@@ -267,14 +266,6 @@
       <workItem from="1751988684502" duration="9105000" />
       <workItem from="1752041609691" duration="35000" />
       <workItem from="1752317294140" duration="429000" />
-    </task>
-    <task id="LOCAL-00053" summary="тесты для проверки телефонов">
-      <option name="closed" value="true" />
-      <created>1752328448716</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1752328448716</updated>
     </task>
     <task id="LOCAL-00054" summary="Обратная проверка телефонов на главной странице">
       <option name="closed" value="true" />
@@ -660,7 +651,15 @@
       <option name="project" value="LOCAL" />
       <updated>1753569342503</updated>
     </task>
-    <option name="localTasksCounter" value="102" />
+    <task id="LOCAL-00102" summary="Добавление контакта в группу">
+      <option name="closed" value="true" />
+      <created>1753618289723</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1753618289725</updated>
+    </task>
+    <option name="localTasksCounter" value="103" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -679,7 +678,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="MARK_IGNORED_AS_EXCLUDED" value="true" />
-    <MESSAGE value="Задание 17" />
     <MESSAGE value="Отделение тестовых данных от сценариев" />
     <MESSAGE value="Генерация тестовых данных в формате JSON" />
     <MESSAGE value="динамическая генерация тестов" />
@@ -704,30 +702,16 @@
     <MESSAGE value="Задание №20" />
     <MESSAGE value="Задание №21" />
     <MESSAGE value="Задание №20 (доработанное)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Задание №20 (доработанное)" />
+    <MESSAGE value="Добавление контакта в группу" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавление контакта в группу" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/test/test_add_contact_in group.py</url>
-          <line>20</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/test/test_add_contact_in group.py</url>
-          <line>21</line>
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/test/test_add_contact_in group.py</url>
-          <line>22</line>
-          <option name="timeStamp" value="19" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/test/test_add_contact_in group.py</url>
           <line>26</line>
-          <option name="timeStamp" value="25" />
+          <option name="timeStamp" value="30" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
