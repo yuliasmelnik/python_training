@@ -11,7 +11,7 @@ def test_add_contact_in_some_group(app, db):
                                    workphone="test", email="test", email2="test", email3="test",
                                    homepage="test", bday="1", bmonth="May", byear="1900", aday="31",
                                    amonth="December", ayear="1900"))
-    elif len(db.get_group_list()) == 0:
+    if len(db.get_group_list()) == 0:
             app.group.create(Group(name="test", header="test", footer="test"))
     contacts = db.get_contact_list()
     groups = db.get_group_list()
