@@ -17,11 +17,11 @@ def test_add_contact_in_some_group(app, db):
     groups = db.get_group_list()
     contact = random.choice(contacts)
     group = random.choice(groups)
-    app.contact.add_contact_in_some_group(id=contact.id, group_id=group.id, group_name=group.name)
+    contact_in_some_group = app.contact.add_contact_in_some_group(contact_id=contact.id, group_id=group.id)
     db = ORMFixture(host="127.0.0.1", name="addressbook", user="root", password="")
     try:
         contacts_in_group = db.get_contacts_in_group(Group(id=group.id))
     finally:
-        pass
-    return contacts_in_group
-    assert app.contact.add_contact_in_some_group(contact.id) == contacts_in_group
+        index = contacts_in_group.index(contact)
+        contact_in_group = contacts_in_group[index]
+        assert contact_in_some_group.contact_id == contact_in_group.id

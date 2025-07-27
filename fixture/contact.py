@@ -1,6 +1,7 @@
 from selenium.webdriver.support.ui import Select
 from model.contact import Contact
 from model.group import Group
+from model.contact_in_group import Contact_in_Group
 import re
 
 class ContactHalper:
@@ -213,15 +214,14 @@ class ContactHalper:
         all_phones = re.search("\n{2}((.*\n){,4})\n{1}", text).group(1)
         return Contact(all_phones_from_view_page=all_phones.strip())
 
-    def add_contact_in_some_group (self, id, group_id, group_name):
+    def add_contact_in_some_group (self, contact_id, group_id):
         wd = self.app.wd
         self.open_home_page()
-        self.select_contact_by_id(id)
+        self.select_contact_by_id(contact_id)
         # add_contact
         wd.find_element_by_name("to_group").click()
-        Select(wd.find_element_by_name("to_group")).select_by_visible_text(group_name)
+        wd.find_element_by_xpath("//select[@name='to_group']/option[@value='%s']" % group_id).click()
         wd.find_element_by_name("add").click()
         self.return_to_contacts_page()
         self.contact_cache = None
-        return Contact(id=id) and Group(id=group_id)
-
+        return Contact_in_Group(contact_id=contact_id,group_id=group_id)
