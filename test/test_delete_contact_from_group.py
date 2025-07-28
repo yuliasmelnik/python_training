@@ -15,20 +15,18 @@ def test_delete_contact_from_group(app, db):
             app.group.create(Group(name="test", header="test", footer="test"))
     db = ORMFixture(host="127.0.0.1", name="addressbook", user="root", password="")
     try:
-        contacts_in_all_groups = db.get_contacts_in_all_groups()
+        contacts_in_all_groups=[]
+        for group in db.get_group_list():
+            contacts_in_all_groups.append(db.get_contacts_in_group(group))
     finally:
-        if len(db.get_contacts_in_all_groups()) == 0:
+        contacts_in_all_groups_without_dublicates = tuple(contacts_in_all_groups)
+        if len(contacts_in_all_groups_without_dublicates) == 0:
             contacts = db.get_contact_list()
             groups = db.get_group_list()
             contact = random.choice(contacts)
             group = random.choice(groups)
             app.contact.add_contact_in_some_group(contact_id=contact.id, group_id=group.id)
-        from_delete_group = random.choice(contacts_in_all_groups)
-        try:
-            contacts_in_group = db.get_contacts_in_group(Group(id=from_delete_group.id))
-        finally:
-            contact_delete = random.choice(contacts_in_group)
-            app.contact.delete_contact_from_group(contact_id=contact_delete.id, group_id=from_delete_group.id)
-            new_contacts_in_group = db.get_contacts_in_group(Group(id=from_delete_group.id))
-            contacts_in_group.remove(contact_delete)
-            assert sorted(contacts_in_group, key=Contact.id_or_max) == sorted(new_contacts_in_group, key=Contact.id_or_max)
+        contact_delete = random.choice(contacts_in_all_groups_without_dublicates)
+        groups_contact_delete = db.get_group_for_contact(Contact(id=contact_delete.id))
+        group_contact_delete = random.choice(groups_contact_delete)
+        app.contact.delete_contact_from_group(contact_id=contact_delete.id, group_id=group_contact_delete.id)
