@@ -36,3 +36,8 @@ def test_delete_contact_from_group(app, db):
         groups_contact_delete = db.get_group_for_contact(Contact(id=contact_delete.id))
         group_contact_delete = random.choice(groups_contact_delete)
         app.contact.delete_contact_from_group(contact_id=contact_delete.id, group_id=group_contact_delete.id)
+        try:
+            new_contacts_in_group = db.get_contacts_in_group(Group(id=group_contact_delete.id))
+        finally:
+            contacts_in_all_groups.remove(contact_delete)
+            assert sorted(contacts_in_all_groups, key=Contact.id_or_max) == sorted(new_contacts_in_group, key=Contact.id_or_max)
