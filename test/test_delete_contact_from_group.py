@@ -11,21 +11,27 @@ def test_delete_contact_from_group(app, db):
                                    workphone="test", email="test", email2="test", email3="test",
                                    homepage="test", bday="1", bmonth="May", byear="1900", aday="31",
                                    amonth="December", ayear="1900"))
-    elif len(db.get_group_list()) == 0:
+    if len(db.get_group_list()) == 0:
             app.group.create(Group(name="test", header="test", footer="test"))
     db = ORMFixture(host="127.0.0.1", name="addressbook", user="root", password="")
     try:
         contacts_in_all_groups=[]
         for group in db.get_group_list():
-            contacts_in_all_groups.append(db.get_contacts_in_group(group))
+            contacts_in_all_groups.extend(db.get_contacts_in_group(group))
     finally:
-        contacts_in_all_groups_without_dublicates = tuple(contacts_in_all_groups)
+        contacts_in_all_groups_without_dublicates = list(set(contacts_in_all_groups))
         if len(contacts_in_all_groups_without_dublicates) == 0:
             contacts = db.get_contact_list()
             groups = db.get_group_list()
             contact = random.choice(contacts)
             group = random.choice(groups)
             app.contact.add_contact_in_some_group(contact_id=contact.id, group_id=group.id)
+            try:
+                contacts_in_all_groups = []
+                for group in db.get_group_list():
+                    contacts_in_all_groups.extend(db.get_contacts_in_group(group))
+            finally:
+                contacts_in_all_groups_without_dublicates = list(set(contacts_in_all_groups))
         contact_delete = random.choice(contacts_in_all_groups_without_dublicates)
         groups_contact_delete = db.get_group_for_contact(Contact(id=contact_delete.id))
         group_contact_delete = random.choice(groups_contact_delete)
