@@ -13,15 +13,21 @@ def test_add_contact_in_some_group(app, db):
                                    amonth="December", ayear="1900"))
     if len(db.get_group_list()) == 0:
             app.group.create(Group(name="test", header="test", footer="test"))
-    contacts = db.get_contact_list()
-    groups = db.get_group_list()
-    contact = random.choice(contacts)
-    group = random.choice(groups)
-    contact_in_some_group = app.contact.add_contact_in_some_group(contact_id=contact.id, group_id=group.id)
     db = ORMFixture(host="127.0.0.1", name="addressbook", user="root", password="")
     try:
-        contacts_in_group = db.get_contacts_in_group(Group(id=group.id))
+        contacts_in_groups = []
+        for group in db.get_group_list():
+            contacts_in_groups.extend(db.get_contacts_in_group(group))
     finally:
-        index = contacts_in_group.index(contact)
-        contact_in_group = contacts_in_group[index]
-        assert contact_in_some_group.id == contact_in_group.id
+        contact_list=db.get_contact_list()
+        contacts = list(set(contact_list).difference(contacts_in_groups))
+        contact = random.choice(contacts)
+        groups = db.get_group_list()
+        group = random.choice(groups)
+        contact_in_some_group = app.contact.add_contact_in_some_group(contact_id=contact.id, group_id=group.id)
+        try:
+            contacts_in_group = db.get_contacts_in_group(Group(id=group.id))
+        finally:
+            index = contacts_in_group.index(contact)
+            contact_in_group = contacts_in_group[index]
+            assert contact_in_some_group.id == contact_in_group.id
