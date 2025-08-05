@@ -19,7 +19,18 @@ def test_add_contact_in_some_group(app, db):
         contacts_in_groups.extend(db.get_contacts_in_group(group))
     contact_list=db.get_contact_list()
     contacts = list(set(contact_list).difference(contacts_in_groups))
-    contact = random.choice(contacts)
+    if len(contacts) == 0:
+        new_contact = (Contact(firstname="test_new", middlename="test_new", lastname="test_new", nickname="test_new",
+                                   company="test_new", title="test_new", address="test_new", homephone="test_new", mobilephone="test_new",
+                                   workphone="test_new", email="test_new", email2="test_new", email3="test_new",
+                                   homepage="test_new", bday="1", bmonth="May", byear="1900", aday="31",
+                                   amonth="December", ayear="1900"))
+        app.contact.create(new_contact)
+        contact_list_with_new_contact = db.get_contact_list()
+        index = contact_list_with_new_contact.index(new_contact)
+        contact = contact_list_with_new_contact[index]
+    else:
+        contact = random.choice(contacts)
     groups = db.get_group_list()
     group = random.choice(groups)
     contact_in_some_group = app.contact.add_contact_in_some_group(contact_id=contact.id, group_id=group.id)
