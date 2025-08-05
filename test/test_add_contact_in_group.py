@@ -27,7 +27,7 @@ def test_add_contact_in_some_group(app, db):
                                    amonth="December", ayear="1900"))
         app.contact.create(new_contact)
         contact_list_with_new_contact = db.get_contact_list()
-        index = contact_list_with_new_contact.index(new_contact)
+        index = len(contact_list_with_new_contact)-1
         contact = contact_list_with_new_contact[index]
     else:
         contact = random.choice(contacts)
