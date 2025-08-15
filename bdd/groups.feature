@@ -15,3 +15,14 @@ Feature: Group tests
     Given a random group from the list
     When I delete the group from the list
     Then the new group list is equal to the old list without the deleted group
+
+  Scenario Outline: Modify a group
+    Given a non-empty group list
+    Given a random group from the list
+    Given a modify group with new <name>, <header> and <footer>
+    When I modify the group from the list
+    Then the new group list is equal to the old list with modified group
+
+    Examples:
+    | name | header | footer |
+    | name_new | header_new | footer_new |

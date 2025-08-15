@@ -44,3 +44,23 @@ def verify_group_deleted(db, non_empty_group_list, random_group, app, check_ui):
     assert sorted(old_groups, key=Group.id_or_max) == sorted(new_groups, key=Group.id_or_max)
     if check_ui:
         assert sorted(new_groups, key=Group.id_or_max) == sorted(app.group.get_group_list(), key=Group.id_or_max)
+
+@given(parsers.parse('a modify group with new {name}, {header} and {footer}'), target_fixture='new_group_date')
+def new_group_date(name, header, footer):
+    return Group(name=name, header=header, footer=footer)
+
+@when('I modify the group from the list')
+def modify_group(app, random_group, new_group_date):
+    new_group_date.id = random_group.id
+    app.group.modify_group_by_id(random_group.id,new_group_date)
+
+@then('the new group list is equal to the old list with modified group')
+def verify_group_modified(db, non_empty_group_list, random_group, app, check_ui, new_group_date):
+    old_groups = non_empty_group_list
+    assert len(old_groups) == app.group.count()
+    new_groups = db.get_group_list()
+    index = old_groups.index(random_group)
+    old_groups[index] = new_group_date
+    assert sorted(old_groups, key=Group.id_or_max) == sorted(new_groups, key=Group.id_or_max)
+    if check_ui:
+        assert sorted(new_groups, key=Group.id_or_max) == sorted(app.group.get_group_list(), key=Group.id_or_max)
