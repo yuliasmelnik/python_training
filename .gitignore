@@ -43,9 +43,6 @@ htmlcov/
 .coverage
 .coverage.*
 .cache
-.cache/data/contacts.json
-.cache/data/groups.json
-.cache/target.json
 nosetests.xml
 coverage.xml
 *.cover
@@ -153,6 +150,9 @@ venv.bak/
 .mypy_cache/
 .dmypy.json
 dmypy.json
+contacts.json
+groups.json
+target.json
 
 # Pyre type checker
 .pyre/
