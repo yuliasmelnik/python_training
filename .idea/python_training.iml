@@ -13,6 +13,7 @@
       <excludeFolder url="file://$MODULE_DIR$/.venv39/Scripts" />
       <excludeFolder url="file://$MODULE_DIR$/venv39/Lib" />
       <excludeFolder url="file://$MODULE_DIR$/venv39/Scripts" />
+      <excludeFolder url="file://$MODULE_DIR$/.robotcode_cache/3.9.0/7.3.2/libdoc" />
     </content>
     <orderEntry type="jdk" jdkName="Python 3.9 virtualenv at C:\Users\AMD\PycharmProjects\python_training\.venv" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
