@@ -7,4 +7,4 @@ pony
 pymysql
 mysql-connector-python-rf
 allure-pytest
-robotframework-python3
+robotframework
