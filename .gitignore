@@ -150,9 +150,6 @@ venv.bak/
 .mypy_cache/
 .dmypy.json
 dmypy.json
-contacts.json
-groups.json
-target.json
 
 # Pyre type checker
 .pyre/
