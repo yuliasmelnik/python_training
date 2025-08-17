@@ -2,6 +2,7 @@ import json
 import os.path
 from fixture.application import Application
 from fixture.db import DbFixture
+from model.contact import Contact
 from model.group import Group
 
 
@@ -45,8 +46,30 @@ class AddressBook:
     def modify_group(self, group, group_data):
         self.fixture.group.modify_group_by_id(group.id, group_data)
 
-    def change_group(self, group_data):
-        return Group(name=group_data.name, header=group_data.header, footer=group_data.footer)
-
     def modify_data_group(self, name, header, footer):
         return Group(name=name, header=header, footer=footer)
+
+    def new_contact(self, firstname, middlename, lastname, nickname, company, title, address, homephone, mobilephone, workphone, email, email2, email3, homepage):
+        return Contact(firstname=firstname, middlename=middlename, lastname=lastname, nickname=nickname,
+                     company=company, title=title, address=address, homephone=homephone, mobilephone=mobilephone,
+                     workphone=workphone, email=email, email2=email2, email3=email3, homepage=homepage)
+
+    def get_contact_list(self):
+        return self.dbfixture.get_contact_list()
+
+    def create_contact(self, contact):
+        self.fixture.contact.create(contact)
+
+    def contact_lists_should_be_equal(self, list1, list2):
+        assert sorted(list1, key=Contact.id_or_max) == sorted(list2, key=Contact.id_or_max)
+
+    def delete_contact(self, contact):
+        self.fixture.contact.delete_contact_by_id(contact.id)
+
+    def modify_contact(self, contact, contact_data):
+        self.fixture.contact.modify_contact_by_id(contact.id, contact_data)
+
+    def modify_data_contact(self, firstname, middlename, lastname, nickname, company, title, address, homephone, mobilephone, workphone, email, email2, email3, homepage):
+        return Contact(firstname=firstname, middlename=middlename, lastname=lastname, nickname=nickname,
+                     company=company, title=title, address=address, homephone=homephone, mobilephone=mobilephone,
+                     workphone=workphone, email=email, email2=email2, email3=email3, homepage=homepage)

@@ -5,7 +5,7 @@ Suite Setup  Init Fixture
 Suite Teardown  Destroy Fixture
 
 *** Test Cases ***
-Add_new_group
+Add new group
     ${old_list}=  Get Group List
     ${group}=  New Group  name1  header1  footer1
     Create Group  ${group}
