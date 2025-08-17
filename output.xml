@@ -1,44 +1,172 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3.2 (Python 3.9.0 on win32)" generated="2025-08-17T16:20:50.855829" rpa="false" schemaversion="5">
+<robot generator="Robot 7.3.2 (Python 3.9.0 on win32)" generated="2025-08-17T22:20:51.941123" rpa="false" schemaversion="5">
 <suite id="s1" name="Group Scenarios" source="C:\Users\AMD\PycharmProjects\python_training\rf\group_scenarios.robot">
-<kw name="Init Fixtures" type="SETUP">
-<msg time="2025-08-17T16:20:51.077816" level="FAIL">No keyword with name 'Init Fixtures' found. Did you mean:
-    rf.AddressBook.Init Fixture</msg>
-<status status="FAIL" start="2025-08-17T16:20:51.077816" elapsed="0.000000">No keyword with name 'Init Fixtures' found. Did you mean:
-    rf.AddressBook.Init Fixture</status>
+<kw name="Init Fixture" owner="rf.AddressBook" type="SETUP">
+<status status="PASS" start="2025-08-17T22:20:52.176119" elapsed="2.686757"/>
 </kw>
 <test id="s1-t1" name="Add_new_group" line="8">
-<status status="FAIL" start="2025-08-17T16:20:51.077816" elapsed="0.000999">Parent suite setup failed:
-No keyword with name 'Init Fixtures' found. Did you mean:
-    rf.AddressBook.Init Fixture</status>
+<kw name="Get Group List" owner="rf.AddressBook">
+<msg time="2025-08-17T22:20:54.869879" level="INFO">${old_list} = [616:44:11:11, 617:55:22:22]</msg>
+<var>${old_list}</var>
+<status status="PASS" start="2025-08-17T22:20:54.866878" elapsed="0.003001"/>
+</kw>
+<kw name="New Group" owner="rf.AddressBook">
+<msg time="2025-08-17T22:20:54.871874" level="INFO">${group} = None:name1:header1:footer1</msg>
+<var>${group}</var>
+<arg>name1</arg>
+<arg>header1</arg>
+<arg>footer1</arg>
+<status status="PASS" start="2025-08-17T22:20:54.870875" elapsed="0.000999"/>
+</kw>
+<kw name="Create Group" owner="rf.AddressBook">
+<arg>${group}</arg>
+<status status="PASS" start="2025-08-17T22:20:54.871874" elapsed="1.258544"/>
+</kw>
+<kw name="Get Group List" owner="rf.AddressBook">
+<msg time="2025-08-17T22:20:56.132419" level="INFO">${new_list} = [616:44:11:11, 617:55:22:22, 618:name1:header1:footer1]</msg>
+<var>${new_list}</var>
+<status status="PASS" start="2025-08-17T22:20:56.131413" elapsed="0.001006"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${old_list}</arg>
+<arg>${group}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2025-08-17T22:20:56.133412" elapsed="0.001008"/>
+</kw>
+<kw name="Group Lists Should Be Equal" owner="rf.AddressBook">
+<arg>${new_list}</arg>
+<arg>${old_list}</arg>
+<status status="PASS" start="2025-08-17T22:20:56.135413" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2025-08-17T22:20:54.864880" elapsed="1.271539"/>
 </test>
 <test id="s1-t2" name="Delete group" line="16">
-<status status="FAIL" start="2025-08-17T16:20:51.080818" elapsed="0.000000">Parent suite setup failed:
-No keyword with name 'Init Fixtures' found. Did you mean:
-    rf.AddressBook.Init Fixture</status>
-</test>
-<kw name="Destroy Fixtures" type="TEARDOWN">
-<msg time="2025-08-17T16:20:51.085818" level="FAIL">No keyword with name 'Destroy Fixtures' found. Did you mean:
-    rf.AddressBook.Destroy Fixture</msg>
-<status status="FAIL" start="2025-08-17T16:20:51.084817" elapsed="0.001001">No keyword with name 'Destroy Fixtures' found. Did you mean:
-    rf.AddressBook.Destroy Fixture</status>
+<kw name="Get Group List" owner="rf.AddressBook">
+<msg time="2025-08-17T22:20:56.140412" level="INFO">${old_list} = [616:44:11:11, 617:55:22:22, 618:name1:header1:footer1]</msg>
+<var>${old_list}</var>
+<status status="PASS" start="2025-08-17T22:20:56.139409" elapsed="0.001003"/>
 </kw>
-<status status="FAIL" start="2025-08-17T16:20:50.858818" elapsed="0.227000">Suite setup failed:
-No keyword with name 'Init Fixtures' found. Did you mean:
-    rf.AddressBook.Init Fixture
-
-Also suite teardown failed:
-No keyword with name 'Destroy Fixtures' found. Did you mean:
-    rf.AddressBook.Destroy Fixture</status>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-08-17T22:20:56.141410" level="INFO">Length is 3.</msg>
+<msg time="2025-08-17T22:20:56.141410" level="INFO">${len} = 3</msg>
+<var>${len}</var>
+<arg>${old_list}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-08-17T22:20:56.141410" elapsed="0.000000"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-08-17T22:20:56.142407" level="INFO">${index} = 0</msg>
+<var>${index}</var>
+<arg>random.randrange(${len})</arg>
+<arg>random</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-08-17T22:20:56.141410" elapsed="0.000997"/>
+</kw>
+<kw name="Get From List" owner="Collections">
+<msg time="2025-08-17T22:20:56.143408" level="INFO">${group} = 616:44:11:11</msg>
+<var>${group}</var>
+<arg>${old_list}</arg>
+<arg>${index}</arg>
+<doc>Returns the value specified with an ``index`` from ``list``.</doc>
+<status status="PASS" start="2025-08-17T22:20:56.142407" elapsed="0.001001"/>
+</kw>
+<kw name="Delete Group" owner="rf.AddressBook">
+<arg>${group}</arg>
+<status status="PASS" start="2025-08-17T22:20:56.143408" elapsed="0.408856"/>
+</kw>
+<kw name="Get Group List" owner="rf.AddressBook">
+<msg time="2025-08-17T22:20:56.554263" level="INFO">${new_list} = [617:55:22:22, 618:name1:header1:footer1]</msg>
+<var>${new_list}</var>
+<status status="PASS" start="2025-08-17T22:20:56.553265" elapsed="0.001999"/>
+</kw>
+<kw name="Remove Values From List" owner="Collections">
+<arg>${old_list}</arg>
+<arg>${group}</arg>
+<doc>Removes all occurrences of given ``values`` from ``list``.</doc>
+<status status="PASS" start="2025-08-17T22:20:56.555264" elapsed="0.000997"/>
+</kw>
+<kw name="Group Lists Should Be Equal" owner="rf.AddressBook">
+<arg>${new_list}</arg>
+<arg>${old_list}</arg>
+<status status="PASS" start="2025-08-17T22:20:56.556261" elapsed="0.001004"/>
+</kw>
+<status status="PASS" start="2025-08-17T22:20:56.138414" elapsed="0.418851"/>
+</test>
+<test id="s1-t3" name="Modify group" line="26">
+<kw name="Get Group List" owner="rf.AddressBook">
+<msg time="2025-08-17T22:20:56.562259" level="INFO">${old_list} = [617:55:22:22, 618:name1:header1:footer1]</msg>
+<var>${old_list}</var>
+<status status="PASS" start="2025-08-17T22:20:56.560264" elapsed="0.001995"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-08-17T22:20:56.563259" level="INFO">Length is 2.</msg>
+<msg time="2025-08-17T22:20:56.563259" level="INFO">${len} = 2</msg>
+<var>${len}</var>
+<arg>${old_list}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-08-17T22:20:56.563259" elapsed="0.000000"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-08-17T22:20:56.564262" level="INFO">${index} = 1</msg>
+<var>${index}</var>
+<arg>random.randrange(${len})</arg>
+<arg>random</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-08-17T22:20:56.564262" elapsed="0.000000"/>
+</kw>
+<kw name="Get From List" owner="Collections">
+<msg time="2025-08-17T22:20:56.566261" level="INFO">${group} = 618:name1:header1:footer1</msg>
+<var>${group}</var>
+<arg>${old_list}</arg>
+<arg>${index}</arg>
+<doc>Returns the value specified with an ``index`` from ``list``.</doc>
+<status status="PASS" start="2025-08-17T22:20:56.565285" elapsed="0.000976"/>
+</kw>
+<kw name="Modify Data Group" owner="rf.AddressBook">
+<msg time="2025-08-17T22:20:56.566261" level="INFO">${group_data} = None:namenew:headernew:footernew</msg>
+<var>${group_data}</var>
+<arg>namenew</arg>
+<arg>headernew</arg>
+<arg>footernew</arg>
+<status status="PASS" start="2025-08-17T22:20:56.566261" elapsed="0.000000"/>
+</kw>
+<kw name="Modify Group" owner="rf.AddressBook">
+<arg>${group}</arg>
+<arg>${group_data}</arg>
+<status status="PASS" start="2025-08-17T22:20:56.567256" elapsed="1.180965"/>
+</kw>
+<kw name="Get Group List" owner="rf.AddressBook">
+<msg time="2025-08-17T22:20:57.750226" level="INFO">${new_list} = [617:55:22:22, 618:namenew:headernew:footernew]</msg>
+<var>${new_list}</var>
+<status status="PASS" start="2025-08-17T22:20:57.749221" elapsed="0.001005"/>
+</kw>
+<kw name="Set List Value" owner="Collections">
+<arg>${old_list}</arg>
+<arg>${index}</arg>
+<arg>${group_data}</arg>
+<doc>Sets the value of ``list`` specified by ``index`` to the given ``value``.</doc>
+<status status="PASS" start="2025-08-17T22:20:57.751223" elapsed="0.000000"/>
+</kw>
+<kw name="Group Lists Should Be Equal" owner="rf.AddressBook">
+<arg>${new_list}</arg>
+<arg>${old_list}</arg>
+<status status="PASS" start="2025-08-17T22:20:57.751223" elapsed="0.001006"/>
+</kw>
+<status status="PASS" start="2025-08-17T22:20:56.560264" elapsed="1.192962"/>
+</test>
+<kw name="Destroy Fixture" owner="rf.AddressBook" type="TEARDOWN">
+<status status="PASS" start="2025-08-17T22:20:57.755231" elapsed="2.334549"/>
+</kw>
+<status status="PASS" start="2025-08-17T22:20:51.943122" elapsed="8.146658"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="2" skip="0">All Tests</stat>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="Group Scenarios" id="s1" pass="0" fail="2" skip="0">Group Scenarios</stat>
+<stat name="Group Scenarios" id="s1" pass="3" fail="0" skip="0">Group Scenarios</stat>
 </suite>
 </statistics>
 <errors>

@@ -41,3 +41,12 @@ class AddressBook:
 
     def group_lists_should_be_equal(self, list1, list2):
         assert sorted(list1, key=Group.id_or_max) == sorted(list2, key=Group.id_or_max)
+
+    def modify_group(self, group, group_data):
+        self.fixture.group.modify_group_by_id(group.id, group_data)
+
+    def change_group(self, group_data):
+        return Group(name=group_data.name, header=group_data.header, footer=group_data.footer)
+
+    def modify_data_group(self, name, header, footer):
+        return Group(name=name, header=header, footer=footer)
