@@ -46,8 +46,8 @@ class AddressBook:
     def modify_group(self, group, group_data):
         self.fixture.group.modify_group_by_id(group.id, group_data)
 
-    def modify_data_group(self, name, header, footer):
-        return Group(name=name, header=header, footer=footer)
+    def data_group(self, name):
+        return Group(name=name)
 
     def new_contact(self, firstname, middlename, lastname, nickname, company, title, address, homephone, mobilephone, workphone, email, email2, email3, homepage):
         return Contact(firstname=firstname, middlename=middlename, lastname=lastname, nickname=nickname,
@@ -69,7 +69,5 @@ class AddressBook:
     def modify_contact(self, contact, contact_data):
         self.fixture.contact.modify_contact_by_id(contact.id, contact_data)
 
-    def modify_data_contact(self, firstname, middlename, lastname, nickname, company, title, address, homephone, mobilephone, workphone, email, email2, email3, homepage):
-        return Contact(firstname=firstname, middlename=middlename, lastname=lastname, nickname=nickname,
-                     company=company, title=title, address=address, homephone=homephone, mobilephone=mobilephone,
-                     workphone=workphone, email=email, email2=email2, email3=email3, homepage=homepage)
+    def data_contact(self, firstname, lastname):
+        return Contact(firstname=firstname, lastname=lastname)

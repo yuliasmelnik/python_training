@@ -28,7 +28,7 @@ Modify contact
     ${len}=  Get Length  ${old_list}
     ${index}=  Evaluate  random.randrange(${len})  random
     ${contact}=  Get From List  ${old_list}  ${index}
-    ${contact_data}=  Modify Data Contact  firstnamenew  middlenamenew  lastnamenew  nicknamenew  companynew  titlenew  addressnew  homephonenew  mobilephonenew  workphonenew  emailnew  email2new  email3new  homepagenew
+    ${contact_data}=  Data Contact  firstnamenew  lastnamenew
     Modify Contact  ${contact}  ${contact_data}
     ${new_list}=  Get Contact List
     Set List Value   ${old_list}  ${index}  ${contact_data}

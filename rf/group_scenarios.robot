@@ -28,7 +28,7 @@ Modify group
     ${len}=  Get Length  ${old_list}
     ${index}=  Evaluate  random.randrange(${len})  random
     ${group}=  Get From List  ${old_list}  ${index}
-    ${group_data}=  Modify Data Group  namenew  headernew  footernew
+    ${group_data}=  Data Group  namenew
     Modify Group  ${group}  ${group_data}
     ${new_list}=  Get Group List
     Set List Value   ${old_list}  ${index}  ${group_data}

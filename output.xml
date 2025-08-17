@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3.2 (Python 3.9.0 on win32)" generated="2025-08-17T22:48:51.905270" rpa="false" schemaversion="5">
+<robot generator="Robot 7.3.2 (Python 3.9.0 on win32)" generated="2025-08-17T23:10:42.301095" rpa="false" schemaversion="5">
 <suite id="s1" name="Contact Scenarios" source="C:\Users\AMD\PycharmProjects\python_training\rf\contact_scenarios.robot">
 <kw name="Init Fixture" owner="rf.AddressBook" type="SETUP">
-<status status="PASS" start="2025-08-17T22:48:52.226274" elapsed="3.266120"/>
+<status status="PASS" start="2025-08-17T23:10:42.556100" elapsed="3.433753"/>
 </kw>
 <test id="s1-t1" name="Add new contact" line="8">
 <kw name="Get Contact List" owner="rf.AddressBook">
-<msg time="2025-08-17T22:48:55.497394" level="INFO">${old_list} = [572:11:1111:11, 573:222:222222:222]</msg>
+<msg time="2025-08-17T23:10:45.995862" level="INFO">${old_list} = [581:firstnameOcKCvLon9:lastname6vAFhomephoneYXP:email, 582:firstname:lastnameRKUBtYhomephoneQ7TX:emailSTlh11, 584:firstnamenew:lastnamenewhomephoneCNWe:emailFaC8bH, 585:firstnameg7FbLFvWB:lastnamePUu...</msg>
 <var>${old_list}</var>
-<status status="PASS" start="2025-08-17T22:48:55.495394" elapsed="0.002000"/>
+<status status="PASS" start="2025-08-17T23:10:45.991862" elapsed="0.004000"/>
 </kw>
 <kw name="New Contact" owner="rf.AddressBook">
-<msg time="2025-08-17T22:48:55.498390" level="INFO">${contact} = None:firstname1:lastname1homephone1:email1</msg>
+<msg time="2025-08-17T23:10:45.997851" level="INFO">${contact} = None:firstname1:lastname1homephone1:email1</msg>
 <var>${contact}</var>
 <arg>firstname1</arg>
 <arg>middlename1</arg>
@@ -27,159 +27,147 @@
 <arg>email21</arg>
 <arg>email31</arg>
 <arg>homepage1</arg>
-<status status="PASS" start="2025-08-17T22:48:55.498390" elapsed="0.000000"/>
+<status status="PASS" start="2025-08-17T23:10:45.996863" elapsed="0.000988"/>
 </kw>
 <kw name="Create Contact" owner="rf.AddressBook">
 <arg>${contact}</arg>
-<status status="PASS" start="2025-08-17T22:48:55.499388" elapsed="3.021715"/>
+<status status="PASS" start="2025-08-17T23:10:45.998853" elapsed="2.880509"/>
 </kw>
 <kw name="Get Contact List" owner="rf.AddressBook">
-<msg time="2025-08-17T22:48:58.524095" level="INFO">${new_list} = [572:11:1111:11, 573:222:222222:222, 574:firstname1:lastname1homephone1:email1]</msg>
+<msg time="2025-08-17T23:10:48.883379" level="INFO">${new_list} = [581:firstnameOcKCvLon9:lastname6vAFhomephoneYXP:email, 582:firstname:lastnameRKUBtYhomephoneQ7TX:emailSTlh11, 584:firstnamenew:lastnamenewhomephoneCNWe:emailFaC8bH, 585:firstnameg7FbLFvWB:lastnamePUu...</msg>
 <var>${new_list}</var>
-<status status="PASS" start="2025-08-17T22:48:58.522090" elapsed="0.002005"/>
+<status status="PASS" start="2025-08-17T23:10:48.880370" elapsed="0.003009"/>
 </kw>
 <kw name="Append To List" owner="Collections">
 <arg>${old_list}</arg>
 <arg>${contact}</arg>
 <doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="PASS" start="2025-08-17T22:48:58.524095" elapsed="0.000992"/>
+<status status="PASS" start="2025-08-17T23:10:48.884373" elapsed="0.000993"/>
 </kw>
 <kw name="Contact Lists Should Be Equal" owner="rf.AddressBook">
 <arg>${new_list}</arg>
 <arg>${old_list}</arg>
-<status status="PASS" start="2025-08-17T22:48:58.525087" elapsed="0.000000"/>
+<status status="PASS" start="2025-08-17T23:10:48.886369" elapsed="0.000000"/>
 </kw>
-<status status="PASS" start="2025-08-17T22:48:55.494390" elapsed="3.030697"/>
+<status status="PASS" start="2025-08-17T23:10:45.990856" elapsed="2.895513"/>
 </test>
 <test id="s1-t2" name="Delete contact" line="16">
 <kw name="Get Contact List" owner="rf.AddressBook">
-<msg time="2025-08-17T22:48:58.530101" level="INFO">${old_list} = [572:11:1111:11, 573:222:222222:222, 574:firstname1:lastname1homephone1:email1]</msg>
+<msg time="2025-08-17T23:10:48.890359" level="INFO">${old_list} = [581:firstnameOcKCvLon9:lastname6vAFhomephoneYXP:email, 582:firstname:lastnameRKUBtYhomephoneQ7TX:emailSTlh11, 584:firstnamenew:lastnamenewhomephoneCNWe:emailFaC8bH, 585:firstnameg7FbLFvWB:lastnamePUu...</msg>
 <var>${old_list}</var>
-<status status="PASS" start="2025-08-17T22:48:58.528088" elapsed="0.003004"/>
+<status status="PASS" start="2025-08-17T23:10:48.888360" elapsed="0.001999"/>
 </kw>
 <kw name="Get Length" owner="BuiltIn">
-<msg time="2025-08-17T22:48:58.532087" level="INFO">Length is 3.</msg>
-<msg time="2025-08-17T22:48:58.532087" level="INFO">${len} = 3</msg>
+<msg time="2025-08-17T23:10:48.890359" level="INFO">Length is 7.</msg>
+<msg time="2025-08-17T23:10:48.890359" level="INFO">${len} = 7</msg>
 <var>${len}</var>
 <arg>${old_list}</arg>
 <doc>Returns and logs the length of the given item as an integer.</doc>
-<status status="PASS" start="2025-08-17T22:48:58.531092" elapsed="0.000995"/>
+<status status="PASS" start="2025-08-17T23:10:48.890359" elapsed="0.000000"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-08-17T22:48:58.533088" level="INFO">${index} = 1</msg>
+<msg time="2025-08-17T23:10:48.893360" level="INFO">${index} = 6</msg>
 <var>${index}</var>
 <arg>random.randrange(${len})</arg>
 <arg>random</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-08-17T22:48:58.532087" elapsed="0.001001"/>
+<status status="PASS" start="2025-08-17T23:10:48.892365" elapsed="0.000995"/>
 </kw>
 <kw name="Get From List" owner="Collections">
-<msg time="2025-08-17T22:48:58.533088" level="INFO">${contact} = 573:222:222222:222</msg>
+<msg time="2025-08-17T23:10:48.894359" level="INFO">${contact} = 588:firstname1:lastname1homephone1:email1</msg>
 <var>${contact}</var>
 <arg>${old_list}</arg>
 <arg>${index}</arg>
 <doc>Returns the value specified with an ``index`` from ``list``.</doc>
-<status status="PASS" start="2025-08-17T22:48:58.533088" elapsed="0.000000"/>
+<status status="PASS" start="2025-08-17T23:10:48.893360" elapsed="0.000999"/>
 </kw>
 <kw name="Delete Contact" owner="rf.AddressBook">
 <arg>${contact}</arg>
-<status status="PASS" start="2025-08-17T22:48:58.534084" elapsed="0.632542"/>
+<status status="PASS" start="2025-08-17T23:10:48.894359" elapsed="0.738344"/>
 </kw>
 <kw name="Get Contact List" owner="rf.AddressBook">
-<msg time="2025-08-17T22:48:59.168618" level="INFO">${new_list} = [572:11:1111:11, 574:firstname1:lastname1homephone1:email1]</msg>
+<msg time="2025-08-17T23:10:49.635691" level="INFO">${new_list} = [581:firstnameOcKCvLon9:lastname6vAFhomephoneYXP:email, 582:firstname:lastnameRKUBtYhomephoneQ7TX:emailSTlh11, 584:firstnamenew:lastnamenewhomephoneCNWe:emailFaC8bH, 585:firstnameg7FbLFvWB:lastnamePUu...</msg>
 <var>${new_list}</var>
-<status status="PASS" start="2025-08-17T22:48:59.167615" elapsed="0.001003"/>
+<status status="PASS" start="2025-08-17T23:10:49.633698" elapsed="0.001993"/>
 </kw>
 <kw name="Remove Values From List" owner="Collections">
 <arg>${old_list}</arg>
 <arg>${contact}</arg>
 <doc>Removes all occurrences of given ``values`` from ``list``.</doc>
-<status status="PASS" start="2025-08-17T22:48:59.169615" elapsed="0.000000"/>
+<status status="PASS" start="2025-08-17T23:10:49.636695" elapsed="0.000000"/>
 </kw>
 <kw name="Contact Lists Should Be Equal" owner="rf.AddressBook">
 <arg>${new_list}</arg>
 <arg>${old_list}</arg>
-<status status="PASS" start="2025-08-17T22:48:59.170616" elapsed="0.000000"/>
+<status status="PASS" start="2025-08-17T23:10:49.637691" elapsed="0.000000"/>
 </kw>
-<status status="PASS" start="2025-08-17T22:48:58.527094" elapsed="0.644521"/>
+<status status="PASS" start="2025-08-17T23:10:48.888360" elapsed="0.749331"/>
 </test>
 <test id="s1-t3" name="Modify contact" line="26">
 <kw name="Get Contact List" owner="rf.AddressBook">
-<msg time="2025-08-17T22:48:59.173613" level="INFO">${old_list} = [572:11:1111:11, 574:firstname1:lastname1homephone1:email1]</msg>
+<msg time="2025-08-17T23:10:49.642688" level="INFO">${old_list} = [581:firstnameOcKCvLon9:lastname6vAFhomephoneYXP:email, 582:firstname:lastnameRKUBtYhomephoneQ7TX:emailSTlh11, 584:firstnamenew:lastnamenewhomephoneCNWe:emailFaC8bH, 585:firstnameg7FbLFvWB:lastnamePUu...</msg>
 <var>${old_list}</var>
-<status status="PASS" start="2025-08-17T22:48:59.172615" elapsed="0.000998"/>
+<status status="PASS" start="2025-08-17T23:10:49.640687" elapsed="0.002001"/>
 </kw>
 <kw name="Get Length" owner="BuiltIn">
-<msg time="2025-08-17T22:48:59.174613" level="INFO">Length is 2.</msg>
-<msg time="2025-08-17T22:48:59.174613" level="INFO">${len} = 2</msg>
+<msg time="2025-08-17T23:10:49.644689" level="INFO">Length is 6.</msg>
+<msg time="2025-08-17T23:10:49.644689" level="INFO">${len} = 6</msg>
 <var>${len}</var>
 <arg>${old_list}</arg>
 <doc>Returns and logs the length of the given item as an integer.</doc>
-<status status="PASS" start="2025-08-17T22:48:59.174613" elapsed="0.000000"/>
+<status status="PASS" start="2025-08-17T23:10:49.643701" elapsed="0.000988"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-08-17T22:48:59.175612" level="INFO">${index} = 1</msg>
+<msg time="2025-08-17T23:10:49.645687" level="INFO">${index} = 5</msg>
 <var>${index}</var>
 <arg>random.randrange(${len})</arg>
 <arg>random</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-08-17T22:48:59.174613" elapsed="0.000999"/>
+<status status="PASS" start="2025-08-17T23:10:49.645687" elapsed="0.000000"/>
 </kw>
 <kw name="Get From List" owner="Collections">
-<msg time="2025-08-17T22:48:59.175612" level="INFO">${contact} = 574:firstname1:lastname1homephone1:email1</msg>
+<msg time="2025-08-17T23:10:49.646686" level="INFO">${contact} = 587:firstname1:lastname1homephone1:email1</msg>
 <var>${contact}</var>
 <arg>${old_list}</arg>
 <arg>${index}</arg>
 <doc>Returns the value specified with an ``index`` from ``list``.</doc>
-<status status="PASS" start="2025-08-17T22:48:59.175612" elapsed="0.000000"/>
+<status status="PASS" start="2025-08-17T23:10:49.646686" elapsed="0.000000"/>
 </kw>
-<kw name="Modify Data Contact" owner="rf.AddressBook">
-<msg time="2025-08-17T22:48:59.176612" level="INFO">${contact_data} = None:firstnamenew:lastnamenewhomephonenew:emailnew</msg>
+<kw name="Data Contact" owner="rf.AddressBook">
+<msg time="2025-08-17T23:10:49.646686" level="INFO">${contact_data} = None:firstnamenew:lastnamenewNone:None</msg>
 <var>${contact_data}</var>
 <arg>firstnamenew</arg>
-<arg>middlenamenew</arg>
 <arg>lastnamenew</arg>
-<arg>nicknamenew</arg>
-<arg>companynew</arg>
-<arg>titlenew</arg>
-<arg>addressnew</arg>
-<arg>homephonenew</arg>
-<arg>mobilephonenew</arg>
-<arg>workphonenew</arg>
-<arg>emailnew</arg>
-<arg>email2new</arg>
-<arg>email3new</arg>
-<arg>homepagenew</arg>
-<status status="PASS" start="2025-08-17T22:48:59.176612" elapsed="0.000000"/>
+<status status="PASS" start="2025-08-17T23:10:49.646686" elapsed="0.000000"/>
 </kw>
 <kw name="Modify Contact" owner="rf.AddressBook">
 <arg>${contact}</arg>
 <arg>${contact_data}</arg>
-<status status="PASS" start="2025-08-17T22:48:59.176612" elapsed="2.950026"/>
+<status status="PASS" start="2025-08-17T23:10:49.647683" elapsed="1.334467"/>
 </kw>
 <kw name="Get Contact List" owner="rf.AddressBook">
-<msg time="2025-08-17T22:49:02.128644" level="INFO">${new_list} = [572:11:1111:11, 574:firstnamenew:lastnamenewhomephonenew:emailnew]</msg>
+<msg time="2025-08-17T23:10:50.987152" level="INFO">${new_list} = [581:firstnameOcKCvLon9:lastname6vAFhomephoneYXP:email, 582:firstname:lastnameRKUBtYhomephoneQ7TX:emailSTlh11, 584:firstnamenew:lastnamenewhomephoneCNWe:emailFaC8bH, 585:firstnameg7FbLFvWB:lastnamePUu...</msg>
 <var>${new_list}</var>
-<status status="PASS" start="2025-08-17T22:49:02.127640" elapsed="0.001004"/>
+<status status="PASS" start="2025-08-17T23:10:50.983139" elapsed="0.004013"/>
 </kw>
 <kw name="Set List Value" owner="Collections">
 <arg>${old_list}</arg>
 <arg>${index}</arg>
 <arg>${contact_data}</arg>
 <doc>Sets the value of ``list`` specified by ``index`` to the given ``value``.</doc>
-<status status="PASS" start="2025-08-17T22:49:02.128644" elapsed="0.000991"/>
+<status status="PASS" start="2025-08-17T23:10:50.988143" elapsed="0.000000"/>
 </kw>
 <kw name="Contact Lists Should Be Equal" owner="rf.AddressBook">
 <arg>${new_list}</arg>
 <arg>${old_list}</arg>
-<status status="PASS" start="2025-08-17T22:49:02.129635" elapsed="0.000000"/>
+<status status="PASS" start="2025-08-17T23:10:50.989146" elapsed="0.000996"/>
 </kw>
-<status status="PASS" start="2025-08-17T22:48:59.172615" elapsed="2.958022"/>
+<status status="PASS" start="2025-08-17T23:10:49.639687" elapsed="1.350455"/>
 </test>
 <kw name="Destroy Fixture" owner="rf.AddressBook" type="TEARDOWN">
-<status status="PASS" start="2025-08-17T22:49:02.132646" elapsed="2.293888"/>
+<status status="PASS" start="2025-08-17T23:10:50.993141" elapsed="2.289185"/>
 </kw>
-<status status="PASS" start="2025-08-17T22:48:51.910277" elapsed="12.516257"/>
+<status status="PASS" start="2025-08-17T23:10:42.304101" elapsed="10.978225"/>
 </suite>
 <statistics>
 <total>
